@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*.
+eQ01 .wrap_sub_visual:before{background:url(/sites/templet_college_01/images/sub/sub_visual_1.jpg) no-repeat center top;}
+*/
+.eQ01 .wrap_sub_visual:before{background:url(/sites/style_guide/images/sub/sub_visual_1.jpg) no-repeat center top;}
+.eQ02 .wrap_sub_visual:before{background:url(/sites/style_guide/images/sub/sub_visual_2.jpg) no-repeat center top;}
+.eQ03 .wrap_sub_visual:before{background:url(/sites/style_guide/images/sub/sub_visual_3.jpg) no-repeat center top;}
+.eQ04 .wrap_sub_visual:before{background:url(/sites/style_guide/images/sub/sub_visual_4.jpg) no-repeat center top;}
+.eQ05 .wrap_sub_visual:before{background:url(/sites/style_guide/images/sub/sub_visual_9.jpg) no-repeat center top;}
+.eQ06 .wrap_sub_visual:before{background:url(/sites/style_guide/images/sub/sub_visual_6.jpg) no-repeat center top;}
+.eQ07 .wrap_sub_visual:before{background:url(/sites/style_guide/images/sub/sub_visual_7.jpg) no-repeat center top;}
+.eQ08 .wrap_sub_visual:before{background:url(/sites/style_guide/images/sub/sub_visual_8.jpg) no-repeat center top;}

@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@page{size:1280px;margin:0;}
+@media print {
+	header,
+	footer,
+	.wrap_sub_visual,
+	.wrap-sub-navi,
+	.wrap_page_func,
+	.wrap_site_link{display:none !important;}
+	.sub{padding-top:0 !important;}
+  	.wrapper,
+	.objHeading_h2, 
+	.objHeading_h3, 
+	.objHeading_h4{
+	  max-width:1280px !important;
+	  margin:auto !important;
+  }
+  
+}

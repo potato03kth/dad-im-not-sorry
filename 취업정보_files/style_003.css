@@ -1,0 +1,10 @@
+@charset "utf-8";
+.timgcaption {
+    font-size: 1.2em;
+    line-height: 17px;
+    padding: 0px;
+    text-align: right;
+    color: #000000 ;
+    font-style: italic;
+}
+.head_navi nav .a_3 {padding:4px 0 4px 6px; word-break: keep-all;}

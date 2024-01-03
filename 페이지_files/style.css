@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#_globalUl::after{content:"";display:block;width:1px;height:16px;background:#cbcbcb;position:absolute;right:1px;top:calc(50% - 8px);}
+#_globalUl li{}
+#_globalUl li.sign{}
+#_globalUl li.sign a{display:block;text-indent:-9999px;width:55px;height:55px;background:url(../images/icon_login.png) no-repeat center;}
+.main.templet_etc_01 #_globalUl::after{background:#FFF;}
+.main.templet_etc_01 #_globalUl li.sign a{background-image:url(../images/icon_login_w.png);}
+
+.gnb_m #_globalUl li.sign a{width:80px;height:80px;background:#00659f url(../images/icon_login_w.png) no-repeat center;}
+
+
+.gnb .loginSign > a,
+.gnb .logoutSign > a{display:block;text-indent:-9999px;width:50px;height:50px;}
+.gnb .loginSign > a{background:url(/sites/style_guide/images/common/icon_login.png) no-repeat center;}
+.gnb .logoutSign > a{background:url(/sites/style_guide/images/common/icon_logout.png) no-repeat center;}

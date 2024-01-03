@@ -1,0 +1,333 @@
+@charset "UTF-8";
+/* Hidden */
+.hidden {position: absolute; top: -9999px; left: -9999px;}
+
+/* List Normar A */
+.board-normal .list-normal {display: inline-block; width: 100%; border-top: 2px solid #006276;}
+.board-normal .list-normal > li { padding: 15px 30px; border-bottom: 1px solid #e2e2e2;}
+.board-normal .list-normal > li:hover {background: #f6f8fa; border-bottom: 1px solid #006276;}
+.board-normal .list-normal > li.notice {padding-left: 80px;  background: #f6f8fa url(../images/ico-notice.png) no-repeat 35px center;}
+.board-normal .list-normal .no-data {float: none !important; width: 100% !important; padding: 83px 0; text-align: center;}
+.board-normal .box {padding: 10px; position: relative;}
+.board-normal .box > a {display: table; width: 100%; table-layout: fixed;}
+.board-normal .shadow > a {display: table; width: 100%;}
+.board-normal .thumb {display: none; vertical-align: top; padding-right: 40px;}
+.board-normal .thumb img {width:100%;}
+.board-normal .info {display: table-cell; vertical-align: top; position: relative; line-height:1.2; width: 100%;}
+.board-normal .info .title {position: relative; padding-bottom: 15px;}
+.board-normal .info .title.trash {padding: 17px 0;}
+.board-normal .info .title strong {overflow: hidden; display: inline-block; max-width: 78%; font-size: 20px; font-family: 'Noto DemiLight'; color: #333; vertical-align: middle; white-space: nowrap; text-overflow: ellipsis;}
+.board-normal .info .title .new {position: relative; top: 2px; display: inline-block; text-indent: -9999px; width: 20px; height: 20px; background: url('../images/ico-new.png') no-repeat center center; margin-left: 7px;}
+.board-normal .info .title .secret {position: relative; top: 0; display: inline-block; text-indent: -9999px; width: 20px; height: 20px; background: url('../images/ico-secret.png') no-repeat center center; margin-left: 7px; vertical-align: middle;}
+.board-normal .info .title .ing {position: relative; top: 2px; display: none; width: 75px; margin: 0 0 0 5px; padding: 7px 0; border-radius: 50px; font-family: 'Noto DemiLight'; font-size: 15px; text-align: center; color: white; }
+.board-normal .info .title .btn-ing {background-color: #828282;}
+.board-normal .info .title .btn-ok {background-color: #1e5ba8;}
+.board-normal .info .para {margin-bottom: 30px; line-height:1.65; color: #666666;}
+.board-normal .info dl {position: relative; display: inline-block; padding-right: 20px; margin-right: 20px; font-size: 16px;}
+.board-normal .info dl:after {content: ''; position: absolute; right: 0; top: 6px; width: 1px; height: 9px; background: #d1d1d1;}
+.board-normal .info dl.date:after {display: none;}
+.board-normal .info dt,
+.board-normal .info dd {display: inline-block;}
+.board-normal .info dt {color: #666;}
+.board-normal .info dd {color: #888;}
+.board-normal .info .file-count {display: inline-block; text-indent: -99999px;}
+.board-normal .info .file {position: absolute; right: 0; top: 13px; display: inline-block; width: 40px; height: 30px; text-indent: -999999px; background: url('../images/ico-file.png') no-repeat center center;}
+.board-normal .info .isFile {display: inline-block; width: 22px; height: 26px; background: url('../images/ico-file.png') no-repeat center center; vertical-align: middle;}
+.board-normal .deleteArtclSeqs {position: absolute; top: 12px; left: -20px; z-index: 1;}
+.board-normal .view-more {padding: 15px; border: 1px solid #d1d1d1; border-radius: 5px; position: absolute; right:15px; top:20px; width: 30px; height: 30px; text-indent: -9999px; background: url('../images/ico-search.png') no-repeat center center;}
+.board-normal .reply {position: relative; display: inline-block; font-family: 'Noto Regular'; font-size: 16px; color: #ff5a00; vertical-align: middle;}
+
+@media all and (max-width:800px) {
+    .board-normal .info {width: 60%;}
+    .board-normal .info dl {padding-right: 5px; margin-right: 1px; font-size: 14px;}
+    .board-normal .info .file {right: -30px;}
+}
+
+@media all and (max-width:700px) {
+    .board-normal .box > a {display: block;}
+    .board-normal .thumb {display: none; width: 100%; padding-right: 0; padding-bottom: 40px;}
+    .board-normal .info {display: block; width: 100%;}
+}
+
+/* Category */
+.board-cate .cate-now{overflow: hidden; display: table; width: 100%; margin-bottom: 20px; padding: 10px 0; border: 1px solid #cfcfcf; border-bottom: 1px solid #23778b; table-layout: fixed;}
+.board-cate .cate-now .solo {display: table-cell; width: 110px; vertical-align: top;}
+.board-cate .cate-now .solo li {text-align: center;}
+.board-cate .cate-now .solo li a{display: block; padding: 4px 20px; font-family:'Dream Regular'; color:#666;}
+.board-cate .cate-now .group {display: table-cell; vertical-align: middle;}
+.board-cate .cate-now .group li{float: left; background: url('../images/line-cate.png') left center no-repeat;}
+.board-cate .cate-now .group li a{display:block; color:#666; padding: 4px 20px; font-family: 'Dream Regular';}
+.board-cate .cate-now .group li.no-cate{padding-top: 4px; padding-left: 15px; padding-bottom: 4px; color: #999;}
+
+/* Tab */
+.board-tab ul {display: inline-block; width: 100%; margin-bottom: 15px;}
+.board-tab ul li {float: left; margin-right: 10px; margin-bottom: 10px;}
+.board-tab ul li a {position: relative; top: 1px; display: block; padding: 10px 15px; border: 1px solid #d1d1d1;}
+.board-tab ul li a.on {background: #004098; color: #fff;}
+
+/* Date Search */
+.board-date {text-align: center; background: #f2f2f2; border: 1px solid #d1d1d1; padding: 20px; margin-bottom: 30px;}
+.board-date label {font-family: 'Noto Regular'; color: #666; margin: 0 15px; padding-left: 30px; background: url('../images/icon-cal.png') no-repeat left center;}
+.board-date input {background: #fff;}
+.board-date .line {display: inline-block;}
+.ui-widget input, .ui-widget select,
+.ui-widget textarea, .ui-widget button,
+.ui-datepicker .ui-datepicker-title select,
+.ui-datepicker table {font-size: 13px;}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {top: 5px;}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-prev-hover {left: 2px;}
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-next-hover {right: 2px;}
+
+@media all and (max-width:620px) {
+    .board-date .line {display: block;}
+}
+
+/* Search */
+.board-search {display: inline-block; width: 100%; margin-bottom: 41px;}
+.board-search .form-search {background: #f5f6f8; padding:20px;}
+.board-search .tbl-search {text-align: center;}
+.board-search .box-title {display: inline-block; background: url('../images/ico-search-title.png') no-repeat  left center; font-family: 'Noto Regular'; font-size:18px; margin-right: 20px; padding: 8px 0 8px 55px; color: #004d5d;}
+.board-search .box-sel {position: relative; top: 0px; display: inline-block; margin-right: 2px; vertical-align: middle;}
+.board-search .box-sel select {background: #fff url('../images/arrow-search.png') no-repeat right center; font-size: 16px; font-family: 'Noto Light'; color: #9d9d9d; border:1px solid #ccd0d7; height: 55px; min-width: 130px; padding-left: 20px; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+.board-search .box-search {position: relative; top:0; display: inline-block; vertical-align: middle;  background: #fff; height: 55px; line-height: 55px; border:1px solid #ccd0d7; min-width: 400px;}
+.board-search .box-search input {position: relative; top: -1px; width: 100%; height: 100%; background: transparent; border: 0; font-family: 'Noto Light'; font-size: 16px; text-indent: 10px; color: #9d9d9d;}
+.board-search .box-search input::placeholder {color: #9d9d9d;}
+.board-search .box-search input[type="submit"] {position: absolute; right:0; top: 0; width: 50px; height: 55px; background: url('../images/ico-search-btn.png') no-repeat center center; text-indent: -9999px; cursor: pointer;}
+.board-search .util-search {margin-bottom: 20px; font-family: 'Noto DemiLight'; font-size: 16px; color: #666;}
+.board-search .util-search a {display: inline-block; width: 30px; text-indent: -9999px; background: url('../images/ico-rss.png') no-repeat center center; margin-right:10px;}
+.board-search .util-search strong {font-family: 'Noto Medium'; font-size: 16px; color: #333;}
+
+@media all and (max-width:780px) {
+    .board-search .box-title {display: none;}
+    .board-search .tbl-search {display: table; width: 100%; table-layout: fixed;}
+    .board-search .util-search {display: none;}
+    .board-search .box-sel {width:35%; display: table-cell; margin-right: 0; padding-right: 20px;}
+    .board-search .box-sel select {min-width: auto; width: 100%;}
+    .board-search .box-search {display: table-cell;}
+}
+
+/* RSS */
+.board-rss {display: inline-block; width: 100%; margin-bottom: 20px;}
+.board-rss .util-search {font-family: 'Noto DemiLight'; font-size: 16px; color: #666;}
+.board-rss .util-search a {display: inline-block; width: 25px; text-indent: -9999px; background: url('../images/ico-rss.png') no-repeat center center; background-size: contain; margin-right:10px; vertical-align: middle;}
+.board-rss .util-search strong {font-family: 'Noto Medium'; font-size: 16px; color: #333;}
+.board-rss .util-search .count-txt {position: relative; top: -1px; display: inline-block; vertical-align: middle; font-size: 16px; letter-spacing: -0.5px; color: #333333; font-family: "Noto Light";}
+.board-rss .util-search .count-txt strong {font-family: "Noto Light"; font-weight: 300;}
+.board-rss .util-search .count-txt .current {color: #1e5ba8; font-family: "Noto Medium";}
+
+/* View */
+.board-view-info {font-size: 0;}
+.view-info {border-top: 2px solid #000000;}
+.view-info .view-num {display: none;}
+.view-info .view-title {background: #fff; font-size: 22px; font-family: 'Noto Medium'; border-bottom: 1px solid #e2e2e2; padding: 30px 30px; text-align: center; color: #000; line-height: 1.5;}
+.view-detail {display: inline-block; width: 100%; border-bottom: 1px solid #e2e2e2; padding: 10px 0 10px 20px; text-align: right;}
+.view-detail .view-util {display: inline-block; margin-right: 20px; font-size: 16px; color: #9b9b9b; font-family: 'Noto Light';}
+.view-detail .view-util dl {display: inline-block; padding-left: 15px; margin-left: 15px; position: relative;}
+.view-detail .view-util dl:after {content: ''; position: absolute; left: 0; top: 12px; width: 1px; height: 11px; background: #c3c3c3;}
+.view-detail .view-util dl:first-child:after {display: none;}
+.view-detail .view-util dl.cate {display: none;}
+.view-detail .view-util dt,
+.view-detail .view-util dd {display: inline-block;}
+.view-detail .view-util dt {padding-right: 1px; color: #666;}
+.view-detail .view-util dd {color: #888;}
+.view-detail .view-util .modify {display: none;}
+.view-detail .view-util .writer:after {display: none;}
+.view-detail .view-share {display: inline-block; margin-right: 20px;}
+.view-detail .view-share .sns {display: inline-block;}
+.view-detail .view-share .util {display: inline-block;}
+
+.view-file {margin-bottom: 40px;}
+.view-file .row {display: table; width: 100%; border-top: 1px solid #e2e2e2; border-bottom: 2px solid #000000;}
+.view-file .row .title {width: 200px; display: table-cell; display: none; vertical-align: middle; padding: 25px 0; background: #f5f5f5; text-align: center; font-family: 'Noto Regular'; color: #444;}
+.view-file .row .insert {display: table-cell; vertical-align: middle; padding: 16px 20px;}
+.view-file .row .insert a {display: inline-block; margin-top: 3px; margin-bottom: 3px; font-size: 14px; color: #333;}
+.view-file .row .insert .prev {display: inline-block; background: url('../images/btn-file-prev.png') no-repeat 10px center; margin-left: 12px; padding: 1px 15px 2px 30px; border: 1px solid #ccc; font-family: 'Noto Regular'; font-size: 14px; color: #5b6a77;}
+.view-file .row .insert li {padding-left: 25px; background: url('../images/ico-add.png') no-repeat left 7px; font-family: 'Noto Light'; font-size: 14px; }
+.view-file .no-file {color: #888;}
+
+@media all and (max-width:1000px) {
+    .view-detail .view-util {width: 100%; float: none;}
+    .view-detail .view-share {width: 100%; float: none;}
+}
+
+@media all and (max-width:700px) {
+    .view-file .row {display: block;}
+    .view-file .row .title {display: block; width: 100%; text-align: left; padding:15px 0 15px 30px;}
+    .view-file .row .insert {display: block; width: 100%;}
+    .view-detail .view-util dl {display: none;}
+    .view-detail .view-util dl.writer,
+    .view-detail .view-util dl.write {display: inline-block;}
+}
+
+/* Write Update */
+.board-write {border-top: 2px solid #7c7c7c; margin-bottom: 40px;}
+.board-write .row {display: table; width: 100%;border-bottom: 1px solid #dadada;}
+.board-write .title {width: 200px; display: table-cell; vertical-align: middle; text-align: left; padding: 9px 15px; font-size: 15px; background: #f5f5f5; font-family: 'Noto Regular'; color: #555;}
+.board-write .insert {display: table-cell; vertical-align: middle; padding: 9px 20px; font-size: 14px; font-family: 'Noto Regular'; color: #666;}
+.board-write .insert.editor {padding: 12px 0 6px 0;}
+.board-write .insert input[type="text"],
+.board-write .insert input[type="password"] {border: 1px solid #dfdfdf; height: 30px; line-height: 30px; padding: 0 10px; }
+.board-write .insert .long {width: 100%;}
+.board-write .insert .space {margin-bottom: 10px;}
+.board-write .insert .tarea {width: 100%; font-family: 'Noto Regular'; font-size: 14px; color: #666;}
+.board-write .insert .possible {font-size: 13px; color: #888; margin-top: 5px; text-transform: uppercase;}
+.board-write .insert .ico-cal { padding-left: 30px; padding-right: 10px; background: url(../images/icon-cal.png) no-repeat left center;}
+.board-write .insert .ico-cal.space {margin-left: 10px;}
+.board-write .insert .switch {margin-top: 10px;}
+.board-write .insert .file-select {font-family: 'Noto Regular'; font-size: 14px; color: #666; padding: 10px; height: 130px;}
+.board-write .insert .one-line {overflow: hidden; background: #f5f5f5;  padding: 10px; border-radius:  7px;}
+.board-write .insert .one-line li {float: left; margin-right: 10px; }
+.board-write .insert .pass-form {margin-top: 10px;}
+.board-write .insert .pass-form label {margin-right: 10px;}
+.board-write .insert .sel-type {margin-right: 5px; font-family: 'Noto Regular'; font-size: 14px; color: #888; border: 1px solid #dfdfdf; height: 30px; line-height: 29px; padding: 0 40px 0 10px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: #ebebeb url(../images/arrow-search.png) no-repeat right center;}
+.board-write .insert .line {display: inline-block;}
+.board-write.pass-view {margin-bottom: 15px;}
+.board-write.pass-view .insert input[type="password"] {width: 100%; box-sizing: border-box;}
+
+@media all and (max-width: 780px) {
+    .board-write .row {display: block;}
+    .board-write .title {display: block; width: 100%;}
+    .board-write .insert {display: block; width: 100%; padding: 9px 0;}
+    .board-write .insert .one-line {background: #fff; border: 1px solid #d1d1d1;}
+}
+
+@media all and (max-width: 580px) {
+    .board-write .insert .line {display: block; margin: 5px 0;}
+    .board-write .insert .ico-cal.space {margin-left: 0;}
+}
+
+/* Contents */
+.view-con {padding: 30px 20px; font-size: 18px; font-family: 'Noto Light'; color: #666;}
+.view-img {margin-bottom: 30px;}
+
+@media all and (max-width: 580px) {
+    .view-con {padding: 30px; }
+}
+
+/* Paging */
+._paging {padding: 60px 0 0 0;}
+._paging > ._inner > ul {margin: 0 13px;}
+._paging > ._inner > ul li strong {width: 35px; height: 35px; line-height:32px; border-radius: 100%; background-color: #99a2b2; border-color: #99a2b2;}
+._paging > ._inner > a {width: 35px; height: 35px; line-height:35px; background-image: url('../images/arrow-page.png') !important; background-repeat: no-repeat; background-color: transparent; border: 0;}
+._paging > ._inner > a._first {background-position: 0 0;}
+._paging > ._inner > a._last {background-position: 0 -175px;}
+._paging > ._inner > a._listNext, ._paging ._inner a._listPrev {display: block;}
+._paging > ._inner > a._listNext {background-position: 0 -140px;}
+._paging > ._inner > a._next {background-position: 0 -105px;}
+._paging > ._inner > a._listPrev {background-position: 0 -35px;}
+._paging > ._inner > a._prev {background-position: 0 -70px;}
+._paging ._inner a, ._paging ._inner strong {border: 0; line-height: 33px;}
+
+@media all and (max-width: 900px) {
+    ._paging {padding: 60px 0 30px 0;}
+}
+@media all and (max-width: 750px) {
+    ._paging {padding:  40px 0 20px 0;}
+    ._paging > ._inner > ul {display: none;}
+    ._paging ._inner ._pageState {display: block;}
+}
+
+/* Prev Next */
+.view-navi {position: relative; padding: 3px; margin-bottom: 30px; background: #e3e3e3;}
+.view-navi .view-white {background: #fff; padding: 0 27px;}
+.view-navi .navi-info {display: none;}
+.view-navi .row {display: table; width: 100%;}
+.view-navi .row.prev {padding: 11px 0; border-bottom: 1px solid #ccc;}
+.view-navi .row.next {padding: 11px 0;}
+.view-navi .row .title {position: relative; display: table-cell; vertical-align: middle; width: 80px; padding-left: 19px; font-family: 'Noto DemiLight'; font-size: 16px; color: #000;}
+.view-navi .row .title:after {content: ''; position: absolute; left: 0; top: 12px; width: 10px; height: 10px; background: url('../images/dot-view-navi.png'); border-radius: 100%;}
+.view-navi .row .insert {display: table-cell; vertical-align: middle; font-family: 'Noto Light'; font-size: 16px; color: #666;}
+
+@media all and (max-width:675px) {
+    .view-navi {display: none;}
+}
+
+/* Button */
+.board-button {text-align: center; display: inline-block; width: 100%;}
+.board-button .btn-mine {float: left;}
+.board-button .btn-control {float: right;}
+.board-button .btn-deco {display: inline-block; min-width: 80px; cursor: pointer; font-size: 14px; height: 40px; line-height: 37px; text-align: center; margin: 0 1px; border-radius: 100px; font-family: 'Noto DemiLight';}
+.board-button  a.btn-deco, .board-button  input.btn-deco {color: #fff;}
+.board-button .btn-deco.color1 {background: #8e99ab; border: 1px solid #8e99ab;}
+.board-button .btn-deco.color2 {background: #2b3e5c; border: 1px solid #2b3e5c;}
+.board-button .btn-deco.color3 {background: #06988d; border: 1px solid #06988d;}
+.board-button .btn-deco.color4 {background: #2b3e5c; border: 1px solid #2b3e5c;}
+.board-button .btn-deco.color5 {background: #006276; border: 1px solid #006276;}
+.board-button.view {margin-bottom: 40px; text-align: right;}
+.board-button.view .btn-mine {float: none; display: inline-block;}
+.board-button.view .btn-control {float: none; display: inline-block;}
+.board-button.answer-button {text-align: right; margin-top: 30px;}
+
+a.samll-btn, input.samll-btn {color: #fff;}
+.small-btn-box {text-align: center;}
+.small-btn-box.align-r {text-align: right;}
+.small-btn-box .samll-btn {display: inline-block; cursor: pointer; font-size: 14px; height: 35px; line-height: 35px; text-align: center; padding: 0 20px; margin: 0 5px; font-family: 'Noto Light';}
+.small-btn-box.no-margin .samll-btn {margin: 0;}
+.small-btn-box .samll-btn.color1 {background: #006276; color: #fff; border: 1px solid #006276;}
+.small-btn-box .samll-btn.color2 {background: #fff; color: #ce2856; border: 1px solid #ce2856;}
+
+.tiny-btn {display: inline-block; cursor: pointer; font-size: 13px; height: 25px; line-height: 20px; border-radius: 50px; text-align: center; padding: 0 12px; margin: 0 3px; font-family: 'Noto DemiLight';}
+.tiny-btn.color1 {background: #0c837f; border: 1px solid #0c837f; color: #fff;}
+.tiny-btn.color2 {background: #ce2856; border: 1px solid #ce2856; color: #fff;}
+
+.file-btn {border: 1px solid #d5d5d5; height: 30px; line-height:26px; padding-left: 35px; padding-right: 20px; cursor: pointer;}
+.file-btn.add {background: #ececec url('../images/ico-file-add.png') no-repeat 10px center; margin-right: 5px;}
+.file-btn.del {background: #ececec url('../images/ico-file-del.png') no-repeat 14px center;}
+
+.del-btn {position: relative; top: -1px; display: inline-block; width: 15px; height: 15px; background: #6a6a6a url('../images/btn-del.png') no-repeat center center; cursor: pointer; text-indent: -9999px; margin-left: 5px; vertical-align: middle;}
+
+@media all and (max-width: 420px) {
+    .board-button .btn-mine,
+    .board-button.view .btn-mine {width: 100%;}
+    .board-button .btn-control,
+    .board-button.view .btn-control {width: 100%;}
+    .board-button .btn-deco {display: block; width: 100%; margin: 0 0 10px 0;}
+}
+
+/* Comment */
+.view-comment-wrap {position: relative; border: 1px solid #ccc; border-top: 2px solid #7c7c7c; padding: 28px 40px 20px 40px; margin-bottom: 40px;}
+.view-comment-write .name {display: none; margin-bottom: 15px;}
+.view-comment-write .name label {font-family: 'Noto Regular'; font-size: 13px; padding-right: 10px; color: #666;}
+.view-comment-write .name input {border-radius: 3px; padding: 5px;}
+.view-comment-write .comment-text {position: relative; padding-left: 70px;}
+.view-comment-write .comment-text:after {content: ''; position: absolute; left: 0px; top: 8px; width: 50px; height: 50px; background: url('../images/icico-quick-answer.png');}
+.view-comment-write textarea {width: 100%; height: 65px; background: #fff; padding: 5px 10px; border: 1px solid #ccc; font-family: 'Noto Light'; font-size: 16px; color: #444;}
+.view-comment-write .must {top:4px}
+.view-comment-list {margin-top: 25px; padding-bottom: 20px;}
+.view-comment-list li {background: #f2f2f2; margin-bottom: 20px; padding: 14px 14px 14px 14px;}
+.view-comment-list li:last-child {margin-bottom: 0;}
+.view-comment-list .title {display: block; padding-left: 25px; background: url('../images/ico-people.png') no-repeat left 8px; font-family: 'Noto Light'; font-size: 16px; color: #444;}
+.view-comment-list .title .date {position: relative;  margin-left: 8px; padding-left: 10px; font-size: 16px; color: #777; }
+.view-comment-list .title .date:after {content: ''; position: absolute; left: 0; top: 7px; width: 1px; height: 11px; background: #d7d7d7;}
+.view-comment-list .comment {padding-left: 25px; font-family: 'Noto Light'; font-size: 16px; color: #444;}
+
+/* Answer */
+.view-answer {position: relative; border: 1px solid #d9e0e3; border-top: 2px solid #262626; padding: 15px 40px 30px 40px; margin-bottom: 40px;}
+.view-answer:after {content: '답글'; position: absolute; top: 0; left: 40px; width: 50px; height: 63px;  padding-top: 9px; background: url('../images/ico-reply.png') no-repeat left top; text-align: center; font-family: 'Noto Regular'; font-size: 16px; color: #fff; }
+.view-answer .answer-title {padding-left: 65px;}
+.view-answer .answer-title .title {font-size: 18px; color: #333; font-family: 'Noto Regular'; line-height: 1.2;}
+.view-answer .answer-info {color: #777; font-family: 'Noto Light'; font-size: 16px; margin-bottom: 20px;}
+.view-answer .answer-info .writer {position: relative; padding-right: 10px; margin-right: 10px;}
+.view-answer .answer-info .writer:after {content: ''; position: absolute; right: 0; top: 8px; width: 1px; height: 10px; background: #c3c3c3; }
+.view-answer .answer {background: #f2f2f2; padding: 11px 20px 13px 20px; font-family: 'Noto Light'; font-size: 16px; color: #666;}
+
+._popup {height: 100%; font-family: 'Noto Regular';}
+._popup #_popupHeader {padding-top: 20px; padding-bottom: 10px; height: auto !important; line-height:normal !important;}
+._popup #_popupHeader h1 {float: none !important; display: block; padding-left: 33px; background: url('../images/bul-pop.png') no-repeat left center; font-family: 'Noto Regular'; font-size: 20px !important;}
+
+.answer-write {border-top: 2px solid #7c7c7c;}
+.answer-write .box-answer {margin-bottom: 40px;}
+.answer-write .row {display: table; width: 100%;border-bottom: 1px solid #d1d1d1;}
+.answer-write .row .title {width: 130px; display: table-cell; vertical-align: middle; text-align: left; padding: 15px 10px; background: #f5f5f5; font-family: 'Noto Regular'; color: #444;}
+.answer-write .row .insert {display: table-cell; vertical-align: middle; padding: 15px 30px; font-family: 'Noto Regular';  font-size: 14px;}
+.answer-write .row textarea {width: 100%; background: #f2f2f2; padding: 15px; font-family: 'Noto Regular'; }
+.answer-write .insert input[type="text"], .answer-write .insert input[type="password"] {border: 1px solid #dfdfdf; height: 30px; line-height: 30px; padding: 0 10px;}
+.answer-write .insert .long {width: 100%;}
+
+/* Must */
+mark.must {width: 10px; position: relative; top: 6px; display: inline-block; background: url('../images/ico-mark.png') no-repeat; text-indent: -9999px;}
